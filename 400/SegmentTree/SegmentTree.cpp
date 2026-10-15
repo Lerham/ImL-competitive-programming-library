@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/400/SegmentTree/SegmentTree.cpp
 
 // State は次の3つを持つ.
 //   static State e();                                   // opの単位元
