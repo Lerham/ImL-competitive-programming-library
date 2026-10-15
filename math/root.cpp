@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/math/root.cpp
 // a^k <= n かをオーバーフローせずに判定
 bool power_leq(ll a, int k, ll n) {
     __int128 value = 1;

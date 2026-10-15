@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/High/SegmentTreeBeats/SegmentTreeBeats.cpp
 // Segment Tree Beats.
 // 区間chmin, 区間chmax, 区間加算, 区間和・最小値・最大値queryを扱う.
 // 配列は1-indexed、区間は閉区間[l,r]で扱う.
