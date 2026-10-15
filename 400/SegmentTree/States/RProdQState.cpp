@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/400/SegmentTree/States/RProdQState.cpp
 // Range Product Query用の状態.
 // modintを使う場合はlong longをmintに置き換える.
 struct RProdQState {

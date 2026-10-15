@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/400/SegmentTree/States/RBitQState.cpp
 // Range Bit Query用の状態.
 // OR・AND・XORをまとめて保持し、1回のqueryでどれも取得できる.
 // SegmentTree<RangeBitQueryState> に渡して使う.

@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/400/SegmentTree/States/RMQState.cpp
 // Range Min/Max Query用の状態.
 // 最小値・最大値それぞれについて、個数と最左・最右の位置も追跡する.
 struct RMQState {
