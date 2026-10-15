@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/400/knapsack.cpp
 // 0/1 ナップサック（重さDP）
 //
 // dp[j] := 重さ合計が j 以下になるように品物を選んだときの最大価値

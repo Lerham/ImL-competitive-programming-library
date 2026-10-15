@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/500/LazySegmentTree/RangeAddSumState.cpp
 // 区間加算・区間和用のStateと遅延タグ.
 struct RangeAddLazy {
     long long add;

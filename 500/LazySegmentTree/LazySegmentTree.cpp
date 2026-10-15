@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/500/LazySegmentTree/LazySegmentTree.cpp
 // State は次を持つ.
 //   static State e();
 //   static State op(const State& left, const State& right);

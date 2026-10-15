@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/500/LazySegmentTree/RangeAddMaxState.cpp
 // 区間加算・区間最大値用のStateと遅延タグ.
 struct RangeAddMaxLazy {
     long long add;
