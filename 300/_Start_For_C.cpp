@@ -1,3 +1,4 @@
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/300/_Start_For_C.cpp
 #include <bits/stdc++.h>
 using namespace std;
 #include <atcoder/all>
