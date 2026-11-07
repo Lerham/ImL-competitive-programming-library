@@ -1,4 +1,4 @@
-// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/400/Dijkstra.cpp
+
 #include <bits/stdc++.h>
 #include <set>
 #define rep(i, n) for (int i = 0; i < N; i++)
@@ -6,21 +6,25 @@ using namespace std;
 
 using ll = long long;
 
+// Source: https://github.com/Lerham/ImL-competitive-programming-library/blob/39ddc0957ddf60ecc625564c55c1d7e568b1a8d7/400/Dijkstra.cpp
 // ======== dikstra 法 ========
 vector<ll> dijkstra(
-    const vector<vector<pair<int, ll>>>& G,
+    const vector<vector<pair<ll, ll>>>& G,
     int start
 )
 {
-    int N = G.size() - 1;
+    // ######### Gには{終端, cost}を持たせる! ################
 
-    // pqの小さい順に取る優先度つきキュー  {cost, 頂点番号}
+
+    // pqの小さい順に取る優先度つきキュー
+    // ここでは {cost, 頂点番号} で管理される. 
     priority_queue<
-        pair<ll, int>,
-        vector<pair<ll, int>>,
-        greater<pair<ll, int>>
+        pair<ll, ll>,
+        vector<pair<ll, ll>>,
+        greater<pair<ll, ll>>
     > Q;
 
+    int N = G.size() - 1;
     vector<bool> kakutei(N + 1, false); //頂点の確定kakutei[i]
     vector<ll> cur(N + 1, -1); //現在の暫定的最短距離cur[i]
 
@@ -30,27 +34,22 @@ vector<ll> dijkstra(
     while (Q.empty() == false)
     {
         // ========== 侵入時の処理 ==========
-        ll current_cost = Q.top().first;
-        int pos = Q.top().second;
+        ll p = Q.top(); 
+        ll cur_cost = p.first;
+        ll pos = p.second;
         Q.pop();
 
-        if (kakutei[pos] == true)
-        {
-            continue;
-        }
+        if (kakutei[pos] == true){continue;}
 
         kakutei[pos] = true;
-        int x = G[pos].size();
+        ll deg_pos = G[pos].size();
 
-        for (int i = 0; i < x; i++)
+        for (int i = 0; i < deg_pos; i++)
         {
-            int nex = G[pos][i].first;
+            ll nex = G[pos][i].first;
             ll cost = G[pos][i].second;
 
-            if (kakutei[nex] == true)
-            {
-                continue;
-            }
+            if (kakutei[nex] == true){continue;}
 
             // 更新するための条件は, 未探索(cost = -1) であるか, それよりも小さいcostであるか
             if (cur[nex] == -1 || cur[nex] > cur[pos] + cost)
